@@ -2,6 +2,8 @@
 
 个性化资源生成与学习多智能体系统原型，面向《人工智能导论》课程场景，展示学生画像、课程资料 RAG、多智能体协作、资源生成、路径规划、智能答疑和学习评估的完整闭环。
 
+[English README](README.en.md)
+
 ![桌面端 RAG 工作台](screenshots/desktop-rag.png)
 
 ## 项目状态
