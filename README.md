@@ -8,10 +8,11 @@
 
 ## 项目状态
 
-- 当前版本：`v0.2.0` 开源维护准备版。
+- 当前版本：`v0.2.1` 维护改进版。
 - 运行形态：纯前端原型，本地浏览器运行，不依赖后端服务。
 - 数据处理：上传的课程资料只在本地浏览器内解析和检索，刷新页面后不会持久保存。
 - 适用场景：课程比赛演示、AI 教育产品原型验证、多智能体学习流程研究。
+- 在线 Demo：[https://condidatefounder.github.io/ai-learning-agent-system/](https://condidatefounder.github.io/ai-learning-agent-system/)
 
 ## 核心能力
 
@@ -35,8 +36,9 @@
 ```bash
 npm test
 npm run serve
-如果 `npm run serve` 提示找不到 Python，请先安装 Python 3，或使用其他静态服务器工具运行项目。
 ```
+
+如果 `npm run serve` 提示找不到 Python，请先安装 Python 3，或使用其他静态服务器工具运行项目。
 
 浏览器访问：
 
@@ -77,6 +79,17 @@ http://localhost:5173
 ```bash
 npm test
 ```
+
+GitHub Actions 会在 `main` 分支 push 和 pull request 时自动运行测试。
+
+## 示例资料
+
+仓库提供了可手动上传测试的课程资料：
+
+- [examples/neural-network-notes.md](examples/neural-network-notes.md)
+
+可以在 RAG 面板上传该文件，然后尝试检索“反向传播为什么需要链式法则？”或“如何理解梯度下降？”。
+
 ## FAQ
 
 ### 这个项目需要后端吗？
