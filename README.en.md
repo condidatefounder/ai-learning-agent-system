@@ -6,10 +6,11 @@ An open source prototype for personalized AI learning workflows. The project foc
 
 ## Status
 
-- Current version: `v0.2.0` open source maintenance foundation.
+- Current version: `v0.2.1` maintenance improvement release.
 - Runtime: frontend-only prototype running in a local browser.
 - Data boundary: uploaded course files are parsed locally in the browser and are not persisted after refresh.
 - Use cases: course demos, AI education product prototyping, and multi-agent learning workflow research.
+- Online demo: [https://condidatefounder.github.io/ai-learning-agent-system/](https://condidatefounder.github.io/ai-learning-agent-system/)
 
 ## Features
 
@@ -41,6 +42,16 @@ Open:
 http://localhost:5173
 ```
 
+If `npm run serve` cannot find Python, install Python 3 first or use another static server tool.
+
+## Sample Material
+
+The repository includes sample course material for manual RAG testing:
+
+- [examples/neural-network-notes.md](examples/neural-network-notes.md)
+
+Upload it in the RAG panel and try questions about backpropagation or gradient descent.
+
 ## Demo Flow
 
 1. Select the neural network learning scenario.
@@ -57,6 +68,8 @@ More details are available in [docs/DEMO.md](docs/DEMO.md).
 ```bash
 npm test
 ```
+
+GitHub Actions runs the test suite on pushes to `main` and pull requests.
 
 The test suite covers:
 
