@@ -28,13 +28,14 @@
 要求：
 
 - Node.js 18 或更高版本。
-- Python 3，用于启动本地静态服务器。
+- Python 3，用于启动本地静态服务器。可以在终端运行 `python --version` 或 `python3 --version` 检查是否已安装。
 
 运行：
 
 ```bash
 npm test
 npm run serve
+如果 `npm run serve` 提示找不到 Python，请先安装 Python 3，或使用其他静态服务器工具运行项目。
 ```
 
 浏览器访问：
